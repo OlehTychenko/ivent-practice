@@ -1,0 +1,72 @@
+body div {
+    margin-bottom: 100px;
+}
+.modal__wrapper {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(255, 0, 0);
+    opacity: 0;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.modal__wrapper-active {
+    opacity: 1;
+}
+
+.modal__window {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 500px;
+    height: 596px;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    font-weight: 900;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.5s;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px black;
+    opacity: 0;
+    
+}
+
+.modal__window button {
+    border: 0px;
+    outline: 0px;
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.5);
+    color: pink;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.modal__window button:hover {
+    background: white;
+}
+
+.modal__window-active {
+    opacity: 1;
+}
+
+.modal__img {
+    background: url(./bea.png) center center no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 10px;
+}
